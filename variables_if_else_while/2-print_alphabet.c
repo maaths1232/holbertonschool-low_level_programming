@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
  /**
   * main - point d'entrée du programme
   * *
@@ -12,6 +12,16 @@
   * *
   * * Return: 0 pour indiquer que le programme s'est terminé avec succès.
   * */
-main (void)
+int  main(void)
 {
-
+	char c = 'a';
+	while (c<= 'z')
+	{		
+	
+	putchar(c);
+	c++;
+	}
+	puthcar('\n');
+	
+	return 0;
+}
