@@ -3,21 +3,18 @@
 /**
  * main - Point d'entrée du programme
  *
- * Description: Affiche tous les chiffres de 0 à 9 sans utiliser de variable de type char.
- *
- * Contraintes :
- * - putchar utilisé seulement deux fois.
- * - Pas de variables de type char.
+ * Description: Affiche tous les chiffres de 0 à 9 sans utiliser
+ * de variable de type char. Utilise uniquement putchar deux fois.
  *
  * Return: 0 si le programme se termine correctement.
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 0; i < 10; i++)
-		putchar(i + 48); /* 48 = '0' en ASCII */
-
+	for (n = 0; n <= 9; n++)
+		putchar(n + '0');
 	putchar('\n');
+
 	return (0);
 }
