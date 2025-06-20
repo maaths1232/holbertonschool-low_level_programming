@@ -5,7 +5,7 @@
  *
  * Description: Affiche l'alphabet en minuscules à l'envers,
  * suivi d'un saut de ligne.
- * 
+ *
  * Contraintes :
  * - Utilisation uniquement de putchar (2 fois maximum).
  * - Tout doit être dans la fonction main.
