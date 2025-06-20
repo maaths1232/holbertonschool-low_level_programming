@@ -1,37 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - point d'entrée du programme
+ * main - Point d'entrée du programme
  *
- * Description: Ce programme affiche toutes les lettres de l'alphabet
- * en minuscules, puis en majuscules, suivies d'un saut de ligne.
+ * Description: Ce programme affiche les lettres de l'alphabet
+ * en minuscules puis en majuscules, suivies d'un saut de ligne.
  *
- * Contraintes :
- * - Utilisation uniquement de la fonction putchar (pas de printf, puts, etc.).
- * - Tout le code doit être dans la fonction main.
- * - putchar ne peut être utilisé que trois fois.
- *
- * Return: 0 pour indiquer que le programme s'est terminé avec succès.
+ * Return: 0 si le programme réussit.
  */
 int main(void)
 {
-    char c = 'a';
+	char c;
 
-    while (c <= 'z')
-    {
-        putchar(c);
-        c++;
-    }
+	c = 'a';
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
 
-    c = 'A';
+	c = 'A';
+	while (c <= 'Z')
+	{
+		putchar(c);
+		c++;
+	}
 
-    while (c <= 'Z')
-    {
-        putchar(c);
-        c++;
-    }
-
-    putchar('\n');
-
-    return (0);
+	putchar('\n');
+	return (0);
 }
